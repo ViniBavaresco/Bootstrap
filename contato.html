@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>ContatoTheKingdoom</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(0, 245, 253);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/animal.png" alt="" height="50px"
+                    width="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="videos.html">Videos</a>
+                    <a class="nav-link" href="favoritos.html">Favoritos</a>
+                    <a class="nav-link" href="contato.html">Contato</a>
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body class="background">
+
+    <h1 class="center">Contate-nos através dos campos de resposta a seguir:</h1>
+
+    <div class="container ml50">
+        <div class="ml50">
+            <form>
+                <label for="nome">Nome completo:</label> <br>
+                <input type="nome" id="nome" onkeyup='validarNome()'>
+                <div id='txtNome'></div>
+                <br>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" onkeyup='validarEmail()'>
+                <div id='txtEmail'></div>
+                <br>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="50" rows="7" onkeydown='validarAssunto()'></textarea>
+                <div id='txtAssunto'></div>
+                <br>
+                <button onclick="enviar()">Enviar</button>
+
+            </form>
+        </div>
+
+        <div class="ml50">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1426
+                .3938097526006!2d-84.55725104200162!3d33.2987990370468!2m3!1f0!2f0!3f0!3m2
+                !1i1024!2i768!4f13.1!3m3!1m2!1s0x88f494dd099585c3%3A0x5b7827c2fff9ab9e!2s74%20
+                Lower%20Creek%20Trail%2C%20Senoia%2C%20GA%2030276%2C%20EUA!5e1!3m2!1spt-BR!2sb
+                r!4v1637776031035!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen=""
+                loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+            <p>74 Lower Creek Trail - Senoia, GA 30276, EUA</p>
+            <p>Nosso email: thekingdom@email.com.br</p>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <p class="center">
+            Todos os direitos reservados por Vinicius Bavaresco &copy;
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/script.js"> </script>
+
+</body>
+
+</html>
