@@ -39,8 +39,9 @@ function validarAssunto() {
     if (assunto.value.length >= 200) {
         txtAssunto.innerHTML = 'Campo inválido, o texto deve conter até 200 caracteres'
         txtAssunto.style.color = 'red'
+        assuntoOk = false
         txtAssunto.style.display = 'block'
-    } else {
+    } else if (assunto.value.length < 200) {
         txtAssunto.style.display = 'none'
         assuntoOk = true
     }
